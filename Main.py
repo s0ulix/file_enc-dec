@@ -1,3 +1,4 @@
+import sys
 from tkinter import *
 from tkinter import messagebox
 from tkinter.filedialog import askopenfilename
@@ -36,6 +37,8 @@ def p1():
     fi(1)
 def p2():
     fi(2)
+def p3():
+    sys.exit()
 
 
 root = Tk()
@@ -48,6 +51,7 @@ Label(text="By s0ulix", bg="red", width="50", height="2", font=("Helvetica", 13)
 Label(root, text = 'Please enter paswsword before proceeding!!!').pack()
 Button(text="Encrypt", height="2", width="30", font=("Helvetica", 13), command=p1).pack()
 Button(text="Decrypt", height="2", width="30", font=("Helvetica", 13), command=p2).pack()
+Button(text="Quit", height="2", width="30", font=("Helvetica", 13), command=p3).pack()
 Label(root, text = 'Password').pack()
 pwdbox = Entry(root)
 pwdbox.pack()
